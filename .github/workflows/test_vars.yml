@@ -33,4 +33,20 @@ jobs:
         env: 
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
-        
+      - name: branch
+        if: github.action == 'pull_request'
+        run: echo ${{ github.head_ref }} >> source-branch
+      - name: Store Branch
+        if: github.action == 'pull_request'
+        uses: actions/upload-artifact@v2
+        with:
+          name: source-branch
+          path: source-branch.file 
+      - name: Get Branch
+        if: github.action == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/download-artifact@v2
+        with:
+          name: source-branch
+      - name: Echo Branch
+        if: github.action == 'push' && github.ref == 'refs/heads/main'
+        run: cat source-branch.file
