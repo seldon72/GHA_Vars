@@ -1,0 +1,31 @@
+name: 'Test Default Vars'
+on: [push, pull_request, create]
+
+jobs:
+  echo_vars:
+    name: 'Echo Vars'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: echo
+        run: |
+          echo ${{ github.workflow }}
+          echo ${{ github.run_id }}
+          echo ${{ github.run_number }}
+          echo ${{ github.job }}
+          echo ${{ github.action }}
+          echo ${{ github.action_path }}
+          echo ${{ github.actions }}
+          echo ${{ github.actor }}
+          echo ${{ github.repository }}
+          echo ${{ github.event_name }}
+          echo ${{ github.event_path }}
+          echo ${{ github.workspace }}
+          echo ${{ github.sha }}
+          echo ${{ github.ref }}
+          echo ${{ github.head_ref }}
+          echo ${{ github.base_ref }}
+          echo ${{ github.server_url }}
+          echo ${{ github.api_url }}
+          echo ${{ github.graphql_url }}
+          
