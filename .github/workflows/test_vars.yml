@@ -1,0 +1,12 @@
+name: 'Test Default Vars'
+on: [push, pull_request, create]
+
+jobs:
+  echo_vars:
+    name: 'Echo Vars'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: echo
+        run: |
+          echo ${{ github.ref }}
