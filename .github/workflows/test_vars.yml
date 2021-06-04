@@ -33,6 +33,10 @@ jobs:
         env: 
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
+      
+      - name: Events
+        run: cat /home/runner/work/_temp/_github_workflow/event.json
+        
       # - name: branch
       #   if: github.event_name == 'pull_request'
       #   run: echo ${{ github.head_ref }} >> source-branch.file
