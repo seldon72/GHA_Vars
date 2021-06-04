@@ -1,0 +1,126 @@
+** Vars
+          echo ${{ github.workflow }}
+          echo ${{ github.run_id }}
+          echo ${{ github.run_number }}
+          echo ${{ github.job }}
+          echo ${{ github.action }}
+          echo ${{ github.action_path }}
+          echo ${{ github.actions }}
+          echo ${{ github.actor }}
+          echo ${{ github.repository }}
+          echo ${{ github.event_name }}
+          echo ${{ github.event_path }}
+          echo ${{ github.workspace }}
+          echo ${{ github.sha }}
+          echo ${{ github.ref }}
+          echo ${{ github.head_ref }}
+          echo ${{ github.base_ref }}
+          echo ${{ github.server_url }}
+          echo ${{ github.api_url }}
+          echo ${{ github.graphql_url }}
+
+
+** Push to feature
+  echo Test Default Vars
+  echo 906974863
+  echo 2
+  echo echo_vars
+  echo run
+  echo 
+  echo 
+  echo seldon72
+  echo seldon72/GHA_Vars
+  echo push
+  echo /home/runner/work/_temp/_github_workflow/event.json
+  echo /home/runner/work/GHA_Vars/GHA_Vars
+  echo 4c06b940e2c285f25e3a6388ea99122f799b4224
+  echo refs/heads/feature/test_vars
+  echo 
+  echo 
+  echo https://github.com
+  echo https://api.github.com
+  echo https://api.github.com/graphql
+
+** Pull request from branch
+  echo Test Default Vars
+  echo 906983618
+  echo 3
+  echo echo_vars
+  echo run
+  echo 
+  echo 
+  echo seldon72
+  echo seldon72/GHA_Vars
+  echo pull_request
+  echo /home/runner/work/_temp/_github_workflow/event.json
+  echo /home/runner/work/GHA_Vars/GHA_Vars
+  echo 97f973b38c5c63263fc80fadff7acda186001b29
+  echo refs/pull/1/merge
+  echo feature/test_vars
+  echo main
+  echo https://github.com
+  echo https://api.github.com
+  echo https://api.github.com/graphql
+
+** Push to main from feature
+  echo Test Default Vars
+  echo 906990815
+  echo 4
+  echo echo_vars
+  echo run
+  echo 
+  echo 
+  echo seldon72
+  echo seldon72/GHA_Vars
+  echo push
+  echo /home/runner/work/_temp/_github_workflow/event.json
+  echo /home/runner/work/GHA_Vars/GHA_Vars
+  echo ac95727bf1670991ec54cb82371b7d2b03427094
+  echo refs/heads/main
+  echo 
+  echo 
+  echo https://github.com
+  echo https://api.github.com
+  echo https://api.github.com/graphql
+
+** Create new branch
+  echo Test Default Vars
+  echo 907003762
+  echo 6
+  echo echo_vars
+  echo run
+  echo 
+  echo 
+  echo seldon72
+  echo seldon72/GHA_Vars
+  echo create
+  echo /home/runner/work/_temp/_github_workflow/event.json
+  echo /home/runner/work/GHA_Vars/GHA_Vars
+  echo ac95727bf1670991ec54cb82371b7d2b03427094
+  echo refs/heads/release/prod
+  echo 
+  echo 
+  echo https://github.com
+  echo https://api.github.com
+  echo https://api.github.com/graphql
+
+** Push to release
+  echo Test Default Vars
+  echo 907003752
+  echo 5
+  echo echo_vars
+  echo run
+  echo 
+  echo 
+  echo seldon72
+  echo seldon72/GHA_Vars
+  echo push
+  echo /home/runner/work/_temp/_github_workflow/event.json
+  echo /home/runner/work/GHA_Vars/GHA_Vars
+  echo ac95727bf1670991ec54cb82371b7d2b03427094
+  echo refs/heads/release/prod
+  echo 
+  echo 
+  echo https://github.com
+  echo https://api.github.com
+  echo https://api.github.com/graphql
