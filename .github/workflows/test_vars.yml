@@ -1,5 +1,7 @@
 name: 'Test Default Vars'
-on: [push, pull_request, create]
+on: 
+  pull_request:
+    types: [opened, closed]
 
 jobs:
   echo_vars:
@@ -34,9 +36,9 @@ jobs:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
       
-      - name: Events
-        run: cat /home/runner/work/_temp/_github_workflow/event.json
-        
+      # - name: Events
+      #   run: cat /home/runner/work/_temp/_github_workflow/event.json
+
       # - name: branch
       #   if: github.event_name == 'pull_request'
       #   run: echo ${{ github.head_ref }} >> source-branch.file
